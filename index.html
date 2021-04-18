@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coding Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="css" href="./style.css" />
+  </head>
+  <body>
+    <header>
+        <nav>
+            <div class="View Highscores">
+            <p>View Highscores</p>
+            // need an anchor tag to go to local storage high scores
+        </div>
+        
+        <div class="Time">
+            <p>Time</p> //need to figure out how to add the countdown timer here
+        </div>
+
+        </nav>
+            
+    </header>
+
+    <main>
+      <section>
+        <div id="Coding Quiz Challenge" class= "slide0"></div>
+         <h1>Coding Quiz Challenge</h1>
+         <p>Try to answer the following questions within the time</p>
+         <p>Limit. Keep in mind the incorrect answers will penalize your score-time</p>
+         <p>By ten seconds!</p>
+         <button class="start-quiz">Start Quiz</button>
+      </section>
+
+      <section>
+
+      <div id="Slide1" style="visibility: hidden; display: none;"></div>
+      <h2>Commonly used Data Types do not include:</h2>
+      <ol>
+          <li>Strings</li>
+          <li>Booleans</li>
+          <li>Alerts</li>
+          <li>Numbers</li>
+      </ol>
+        <div id="Slide1-correct" style="visibility: hidden; display: none;"></div>
+        <div id="Slide1-wrong" style="visibility: hidden; display: none;"></div>
+        <div class="answer-timer" style="visibility: hidden; display: none;"></div>
+      </section>
+
+      <section>
+
+        <div id="Slide2" style="visibility: hidden; display: none;"></div>
+        <h2>The condition in an if/else statement is enclosed within _________.</h2>
+        <ol>
+            <li>Quotes</li>
+            <li>Curly brackets</li>
+            <li>Parenthesis</li>
+            <li>Square brackets</li>
+        </ol>
+        <div id="Slide2-correct" style="visibility: hidden; display: none;"></div>
+        <div id="Slide2-wrong" style="visibility: hidden; display: none;"></div>
+        <div class="answer-timer" style="visibility: hidden; display: none;"></div>
+        </section>
+
+        <section>
+
+            <div id="Slide3" style="visibility: hidden; display: none;"></div>
+            <h2>Arrays in Javascript can be used to store _________.</h2>
+            <ol>
+                <li>Numbers and strings</li>
+                <li>Other arrays</li>
+                <li>Booleans</li>
+                <li>All the above</li>
+            </ol>
+            <div id="Slide3-correct" style="visibility: hidden; display: none;"></div>
+            <div id="Slide3-wrong" style="visibility: hidden; display: none;"></div>
+            <div class="answer-timer" style="visibility: hidden; display: none;"></div>
+            </section>
+            
+            <section>
+
+                <div id="Slide4" style="visibility: hidden; display: none;"></div>
+                <h2>String values must be enclosed within_________</h2>
+                <h2>when being assigned to variables.</h2>
+                <ol>
+                    <li>Commas</li>
+                    <li>Curly brackets</li>
+                    <li>Quotes</li>
+                    <li>Parenthesis</li>
+                </ol>
+                <div id="Slide4-correct" style="visibility: hidden; display: none;"></div>
+                <div id="Slide4-wrong" style="visibility: hidden; display: none;"></div>
+                <div class="answer-timer" style="visibility: hidden; display: none;"></div>
+            </section>
+
+            <section>
+
+                <div id="Slide5" style="visibility: hidden; display: none;"></div>
+                <h2>A very useful tool used during development</h2>
+                <h2>and debugging for printing content to the</h2>
+                <h2>debugger is:</h2>
+                <ol>
+                    <li>Javascript</li>
+                    <li>Terminal/bash</li>
+                    <li>For loops</li>
+                    <li>Console.log</li>
+                </ol>
+
+                <div id="Slide5-correct" style="visibility: hidden; display: none;"></div>
+                <div id="Slide5-wrong" style="visibility: hidden; display: none;"></div>
+                <div class="answer-timer" style="visibility: hidden; display: none;"></div>
+            </section>
+
+      <section>
+        <div class="score results">
+            <div id="Slide6" style="visibility: hidden; display: none;"></div>
+          <div>
+          <h2>Enter initials <span class="enter_initials"></span> </h2>
+          
+        </div>
+          <button class="submit-button">Submit</button>
+      </div>
+          
+      <section>
+        <div class="highscores">
+            <div id="Slide7" style="visibility: hidden; display: none;"></div>
+          <div>
+          <h2>Highscores <span class="highscores-list"></span> </h2>
+          //somehow link local storage for browser highscore section
+        </div>
+          <button class="Go-back-button">Go Back</button>
+          <button class="clear-button">Clear Highscores</button>
+      </div>
+      </section>
+      
+      <section>
+      <div class= "card timer">
+            <div class = "timer-text">
+            <div class="timer-count">10</div>
+            <h3>seconds remaining</h3>
+          </div>
+
+         </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
