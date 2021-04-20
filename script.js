@@ -15,7 +15,55 @@ var Container7 = document.querySelector("container7");
 var GoBackButton = document.querySelector(".Go-back-button");
 var ClearButton = document.querySelector(".clear-button");
 
+var Container1 = [
+  { 
+    question : "Commonly used Data Types do not include:",
+    options : ["Strings", "Booleans", "Alerts", "Numbers"],  
+    answer : 2,
+    hidden = false,
+    visible = true,
+  }
+]
 
+var Container2 = [
+  {
+    question : "The condition in an if/else statement is enclosed within _______.",
+    options : ["Quotes", "Curly brackets", "Parenthesis", "Square brackets"],
+    answer: 2,
+    hidden = false,
+    visible = true,
+  }
+]
+
+var Container3 = [
+  {
+    question : "Arrays in Javascript can be used to store ________.",
+    options : ["Numbers and strings", "Other arrays", "Booleans", "All the above"],
+    answer: 3,
+    hidden = false,
+    visible = true,
+  }
+]
+
+var Container4 = [
+  {
+    question: "String values must be enclosed within ______ when being assigned to variables.",
+    options : ["Commas", "Curly brackets", "Quotes", "Parenthesis"],
+    answer : 2,
+    hidden = false,
+    visible = true,
+  }
+]
+
+var Container5 = [
+  {
+    question: "A very useful tool used during development and debugging for printing content to the debugger is:",
+    options : ["Javascript", "Terminal/bash", "For loops", "Console.log"],
+    answer: 3,
+    hidden = false,
+    visible = true,
+  }
+]
 
 var wrong;
 var correct;
