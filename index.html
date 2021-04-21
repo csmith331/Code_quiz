@@ -1,13 +1,23 @@
+
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Coding Quiz</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
+    
+    <title>Code Quiz Challenge</title>
+
+</head>
+<body>
     <header>
+
         <nav>
             <div class="View-Highscores">
             <p>View Highscores</p>
@@ -20,193 +30,39 @@
         </div>
 
         </nav>
-            
+
+
     </header>
+    <div id='start-quiz'></div>
 
-    <main>
-      <body>
-      
-      
-      <section class= "container0" style="visibility: visibile;">
-        <!-- <div id="Coding Quiz Challenge" class= "slide0" style="visibility: hidden;"> -->
-         <h1>Coding Quiz Challenge</h1>
-         <p>Try to answer the following questions within the time</p>
-         <p>Limit. Keep in mind the incorrect answers will penalize your score-time</p>
-         <p>By ten seconds!</p>
-         <button class="start-quiz">Start Quiz</button>
-        </div>
-        </section>
+​    <main>
+    <body>
 
-      
-      
-      <section class= "container1" style="visibility: hidden;">
-      
-      <!-- <div id="Slide1" style="visibility: hidden;"> -->
-      <h2>Commonly used Data Types do not include:</h2>
-      <div class="question-color">
-      <ol>
-          <li>Strings</li>
-          <li>Booleans</li>
-          <li>Alerts</li>
-          <li>Numbers</li>
-      </ol>
-      </div>
-    </div>
-        <div id="correct" style="visibility: hidden;">
-        <p><u>Correct!</u></p>
-        </div>
-        <div id="wrong" style="visibility: hidden;">
-        <p><u>Wrong!</u></p>
-        </div>
-        
-        <!-- //may not need answer-timer section use time section instead -->
-        <div class="answer-timer" style="visibility: hidden;"></div>
-      </section>
+    <div class='container'style="visibility: visibile;" >
+    <h1>Coding Quiz Challenge</h1>
+    <p>Try to answer the following questions within the time</p>
+    <p>Limit. Keep in mind the incorrect answers will penalize your score-time</p>
+    <p>By ten seconds!</p>
 
-      
-      
-      <section class= "container2" style="visibility: hidden;">
-
-        <!-- <div id="Slide2" style="visibility: hidden;> -->
-        <h2>The condition in an if/else statement is enclosed within _________.</h2>
-        <div class="question-color">
-        <ol>
-            <li>Quotes</li>
-            <li>Curly brackets</li>
-            <li>Parenthesis</li>
-            <li>Square brackets</li>
-        </ol>
-        </div>
-    </div>
-        <div id="correct" style="visibility: hidden;">
-          <p><u>Correct!<u></p>
-        </div>
-        <div id="wrong" style="visibility: hidden;">
-          <p><u>Wrong!</u></p>
-        </div>
-        <div class="answer-timer" style="visibility: hidden;"></div>
-        </section>
-
-        
-        
-        <section class= "container3" style="visibility: hidden;">
-
-            <!-- <div id="Slide3" style="visibility: hidden;"> -->
-            <h2>Arrays in Javascript can be used to store _________.</h2>
-            <div class="question-color">
-              <ol>
-                <li>Numbers and strings</li>
-                <li>Other arrays</li>
-                <li>Booleans</li>
-                <li>All the above</li>
-            </ol>
-            </div>
-            </div>
-            <div id="correct" style="visibility: hidden;">
-              <p><u>Correct!</u></p>
-            </div>
-            <div id="wrong" style="visibility: hidden;">
-              <p><u>Wrong!</u></p>
-            </div>
-            <div class="answer-timer" style="visibility: hidden;"></div>
-            </section>
-            
-            
-            
-            <section class= "container4" style="visibility: hidden;">
-
-                <!-- <div id="Slide4" style="visibility: hidden;"> -->
-                <p><strong>String values must be enclosed within_________</strong></p>
-                <p><strong>when being assigned to variables.</strong></p>
-                <div class="question-color">
-                <ol>
-                    <li>Commas</li>
-                    <li>Curly brackets</li>
-                    <li>Quotes</li>
-                    <li>Parenthesis</li>
-                </ol>
-                </div>
-                </div>
-                <div id="correct" style="visibility: hidden;">
-                  <p><u>Correct!</u></p>
-                </div>
-                <div id="wrong" style="visibility: hidden;">
-                  <p><u>Wrong!</u></p>
-                </div>
-                <div class="answer-timer" style="visibility: hidden;"></div>
-            </section>
-
-            
-            
-            <section class= "container5" style="visibility: hidden;">
-
-                <!-- <div id="Slide5" style="visibility: hidden;"> -->
-                <p><strong>A very useful tool used during development</strong></p>
-                <p><strong>and debugging for printing content to the</strong></p>
-                <p><strong>debugger is:</strong></p>
-                <div class="question-color">
-                <ol>
-                    <li>Javascript</li>
-                    <li>Terminal/bash</li>
-                    <li>For loops</li>
-                    <li>Console.log</li>
-                </ol>
-                </div>
-                </div>
-
-                <div id="correct" style="visibility: hidden;">
-                  <p><u>Correct!<u></p>
-                </div>
-                <div id="wrong" style="visibility: hidden;">
-                  <p><u>Wrong!</u></p>
-                </div>
-                <div class="answer-timer" style="visibility: hidden;"></div>
-            </section>
-
-        
-        
-          <section class= "container6" style="visibility: hidden;">
-      
-        <div class="score results">
-            <!-- <div id="Slide6" style="visibility: hidden;"> -->
-          <h1>All done!</h1>
-          <h2>Enter initials: <span class="enter_initials">Example</span> </h2>
-          
     
-          <button class="submit-button">Submit</button>
-      </div>
-    </section>
-          
-      <section class= "container7" style="visibility: hidden;">
-        <div class="highscores">
-            <!-- <div id="Slide7" style="visibility: visible;"> -->
-          
-          <h1>Highscores <span class="highscores-list"></span></h1>
-          //somehow link local storage for browser highscore section
-        
-          <button class="Go-back-button">Go Back</button>
-          <button class="clear-button">Clear Highscores</button>
-      </div>
-      </section>
-      
-      <section>
-      <!-- <div class= "card timer">
-            <div class = "timer-text"> -->
-            
-            
-            
-              <!-- May not need timer count just use class= answer-timer instead to count down -->
-              
-            <!-- //shouldn't need this class for the timer countdown -->
-            <div class="timer-count"> 
-              <p>00</p>
-            <!-- <h3>seconds remaining</h3> -->
-          </div>
 
-         </div>
-        </div>
-      </section>
-    </main>
-    <script src="/script.js"></script>
-  </body>
+    <ul class='question-color'>
+        <button type="button" class="choice" id="A" onclick="Answer('0')"></button>
+        <button type="button" class="choice" id="B" onclick="Answer('1')"></button>
+        <button type="button" class="choice" id="C" onclick="Answer('2')"></button>
+        <button type="button" class="choice" id="D" onclick="Answer('3')"></button>
+    </div>
+
+    <ul class='answer'></div>
+
+        <button class='start-quiz'>Start Quiz</button>
+
+    </div>
+
+    <script text='javasript' src='./script.js'></script>
+
+</main>
+</body>
+
 </html>
+
