@@ -44,10 +44,12 @@ body {
         text-align:center;
         position: relative;
         left: 44vw;
+        top: 15vh;
     } 
 
     .question-color {
         display:inline-block;
+        flex-wrap:wrap;
         width: 300px;
         height: 100px;
         padding: 15px;
@@ -57,4 +59,135 @@ body {
         cursor: pointer;
         font-size: 25px;
         /* //need to figure out how to get boxes between questions */
+    }
+
+    .enter_initials {
+        background-color:white;
+        border-color:black;
+        border-style: 3px solid black;
+        padding: 10px;
+        margin:20px;
+        height: 400px;
+        width: 600px;
+        position: relative;
+        left: 14vh;
+        text-align: center;
+        }
+    
+    .submit-button {
+        background-color: purple;
+        color:white;
+        float: center;
+        padding: 10px;
+        margin: 20px;
+        text-align:center;
+        position: relative;
+        left: 14vw;
+        top: 150px;
+    }
+
+    .Go-back-button {
+        background-color: purple;
+        color:white;
+        float: center;
+        padding: 10px;
+        margin: 20px;
+        text-align:center;
+        position: relative;
+        right: 5vw;
+        top:150px;
+    }
+    
+    .clear-button {
+        background-color: purple;
+        color:white;
+        float: center;
+        padding: 10px;
+        margin: 20px;
+        text-align:center;
+        position: relative;
+        left: 14vw;
+        top: 150px;
+    }
+
+    .answer {
+        margin-top: -300px;
+        margin-left: -100px;
+        color: white;
+        width: 200px;
+        height:200px;
+        top: 40vh;
+        left:50%;
+        text-align:center 20px;
+        position:fixed;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 40px;
+        color:white;
+    }
+    
+    /* #wrong {
+        margin-top: -300px;
+        margin-left: -100px;
+        color: white;
+        width: 200px;
+        height:200px;
+        top: 50%;
+        left:50%;
+        text-align:center 20px;
+        position:fixed;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 40px;
+        color:white;
+    } */
+
+    #A {
+        display:inline-block;
+        flex-wrap:wrap;
+        width: 300px;
+        height: 100px;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 10px;
+        color:purple;
+        cursor: pointer;
+        font-size: 25px;  
+    }
+
+    #B {
+        display:inline-block;
+        flex-wrap:wrap;
+        width: 300px;
+        height: 100px;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 10px;
+        color:purple;
+        cursor: pointer;
+        font-size: 25px;    
+    }
+
+    #C {
+        display:inline-block;
+        flex-wrap:wrap;
+        width: 300px;
+        height: 100px;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 10px;
+        color:purple;
+        cursor: pointer;
+        font-size: 25px; 
+    }
+
+    #D {
+        display:inline-block;
+        flex-wrap:wrap;
+        width: 300px;
+        height: 100px;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 10px;
+        color:purple;
+        cursor: pointer;
+        font-size: 25px;   
     }

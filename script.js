@@ -4,12 +4,14 @@ var Container0 = document.querySelector(".container");
 var StartQuiz = document.querySelector(".start-quiz");
 var Answers = document.querySelector(".answers");
 var Choices = document.querySelector("question-color");
+var A =document.getElementById("A");
+var B =document.getElementById("B");
+var C =document.getElementById("C");
+var D = document.getElementById("D");
+var Submit =document.querySelector(".submit-button");
 
 
 
-var questionIndex = 0;
-
-var counter = 0
 
 var array = [
 
@@ -62,6 +64,10 @@ var array = [
 ]
 
 
+
+var questionIndex = 0;
+
+var counter = 0
 var secondsStart = 75;
 var Interval = 0;
 var timeDeduction = 15;
@@ -76,6 +82,11 @@ question
 
 
 
+
+
+window.load=array.load();
+
+function 
 
 // questionDiv.textContent = questions[counter]
 
