@@ -9,6 +9,7 @@ var B =document.getElementById("B");
 var C =document.getElementById("C");
 var D = document.getElementById("D");
 var Submit =document.querySelector(".submit-button");
+var question =document.querySelector("question");
 
 
 
@@ -74,53 +75,50 @@ var timeDeduction = 15;
 
 //need to create a timer function
 
+NavTime.addEventListener("click", function () {
+if (interval == 0) {
+    interval = setInterval(function () {
+        secondsStart--;
+        StartQuiz = "Time: " + secondsStart;
+
+        if (secondsStart <= 0) {
+            clearInterval(interval);
+            Finished ();
+            StartQuiz = "Your out of Time";
+        }
+    }, 1000);
+}
+return(question);
+});
 
 
-function render (questionIndex) {
-question
+
+startbtn.addEventListener("click", function () {
+intro.style.display
+
+presentaquestiontouser();
+}
+
+function startGame() {
+    console.log(".start-quiz");
+    timerCount = 75;
+    // Prevents start button from being clicked when round is in progress
+    StartQuiz.enabled = true;
+    startTimer()
+  }
+
+function start() {
+    let timerid = setinterval(secondsTask, 1000);
+    NavTime.textContent = secondsStart;
+    presentaquestiontouser(); StartQuiz.setAttribute("class", );
+}
+
+function presentaquestiontouser() {
+  A.textcontent = array[0].choices[0];
+  B.textcontent = array[1].choices[1];
+  C.textcontent = array[2].choices[2];
+  D.textcontent = array[3].choices[3];  
 }
 
 
-
-
-
-window.load=array.load();
-
-function 
-
-// questionDiv.textContent = questions[counter]
-
-// answerDiv.textContent = answers[counter]
-
-
-
-// function selectAnswer(){
-
-//     //statement that compares their answer to the correct answer
-
-//     if(true){
-
-//         alert('you got the question right')
-
-//     }
-
-//     counter++
-
-//     questionDiv.innerHTML = array[2].question
-
-//     answerDiv.innerHTML = array[2].answer
-
-}
-
-// function start(){
-
-//     // start timer
-
-//     document.getElementById('start').style.visibility = 'hidden'
-
-//     document.getElementById('question').style.visibility = 'visible'
-
-//     document.getElementById('answer').style.visibility = 'visible'
-
-}
 

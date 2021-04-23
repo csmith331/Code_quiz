@@ -150,7 +150,8 @@ body {
         margin: 10px;
         color:purple;
         cursor: pointer;
-        font-size: 25px;  
+        font-size: 25px; 
+        font-family:Georgia, 'Times New Roman', Times, serif;
     }
 
     #B {
@@ -163,7 +164,8 @@ body {
         margin: 10px;
         color:purple;
         cursor: pointer;
-        font-size: 25px;    
+        font-size: 25px;
+        font-family:Georgia, 'Times New Roman', Times, serif;  
     }
 
     #C {
@@ -177,6 +179,7 @@ body {
         color:purple;
         cursor: pointer;
         font-size: 25px; 
+        font-family:Georgia, 'Times New Roman', Times, serif;
     }
 
     #D {
@@ -189,5 +192,20 @@ body {
         margin: 10px;
         color:purple;
         cursor: pointer;
-        font-size: 25px;   
+        font-size: 25px;
+        font-family:Georgia, 'Times New Roman', Times, serif;  
+    }
+
+    .question {
+        display:inline-block;
+        flex-wrap:wrap;
+        width: 300px;
+        height: 100px;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 10px;
+        color:purple;
+        cursor: pointer;
+        font-size: 25px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
     }
