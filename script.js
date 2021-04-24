@@ -4,6 +4,7 @@ var Container0 = document.querySelector(".container");
 var StartQuiz = document.querySelector(".start-quiz");
 var correct = document.querySelector(".correct");
 var choices = document.querySelector(".choices");
+// var choices = document.querySelector(".choices").children;
 var choiceA =document.getElementById("A");
 var choiceB =document.getElementById("B");
 var choiceC =document.getElementById("C");
@@ -14,7 +15,7 @@ var question =document.querySelector("question");
 
 
 
-var codingQuestions = [
+var Questionselection = [
 
     {
 
@@ -72,7 +73,7 @@ var codingQuestions = [
 
 
 var questionIndex = 0;
-var endQuestion = codingQuestions.length -1;
+var endQuestion = Questionselection.length -1;
 var counter = 0
 var secondsStart = 75;
 var Interval = 0;
@@ -84,7 +85,7 @@ StartQuiz.addEventListener("click", start);
 
 function start() {
     container.getElementsByClassName.display = "block";
-    choices.getElementsByClassName.display = "block";
+    choices.getElementsByClassName.style.display = "block";
 
     SecondsStart = 75;
     getQuestion();
@@ -106,26 +107,27 @@ if (Interval == 0) {
         }
     }, 1000);
 }
+}
 // return(question);
 // };
 
 
 function getQuestion() {
-    var choices = codingQuestions [questionIndex];
+    var choices = Questionselection [questionIndex];
 
-  A.textcontent = codingQuestions[0].choices[0];
-  B.textcontent = codingQuestions[1].choices[1];
-  C.textcontent = codingQuestions[2].choices[2];
-  D.textcontent = codingQuestions[3].choices[3];  
+  A.textContent = Questionselection[0].choices[0];
+  B.textContent = Questionselection[1].choices[1];
+  C.textContent = Questionselection[2].choices[2];
+  D.textContent = Questionselection[3].choices[3];  
 
   for (var i = 0; i < lastQuestion; i++) {
 
   }
 }
 
-for (let i = 0; i < choicesDiv.length; i++) {
-    choicesDiv[i].addEventListener('click', function () {
-        var Answer = codingQuestions[questionIndex].correct;
+for (let i = 0; i < choices.length; i++) {
+    choices[i].addEventListener('click', function () {
+        var Answer = Questionselection [questionIndex].correct;
 
         console.log('click');
         if (Answer === this.getAttribute('onclick')) {
@@ -141,11 +143,15 @@ for (let i = 0; i < choicesDiv.length; i++) {
                 localStorage.setItem("count", count);
             }
             //window.localStorage.setItem('score - 2')
-            }
-        })
         }
         questionIndex++;
-        getQuestion();
+        getQuestion(); 
+    
+    });
     }
+        
+
+
     
 
+    
