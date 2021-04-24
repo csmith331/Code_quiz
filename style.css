@@ -1,8 +1,8 @@
-body {
+/* body {
     background-image:url("Images/pexels-coding.jpg");
     margin: 0;
     padding:0;
-    }
+    } */
 
     .View-Highscores {
         padding-top: 15px;
@@ -19,7 +19,7 @@ body {
         float: right;
         font-family:Georgia, 'Times New Roman', Times, serif;
         font-size: 40px;
-        color: white;
+        color:black;
     }
     
     .container {

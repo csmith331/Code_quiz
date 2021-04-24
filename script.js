@@ -4,13 +4,12 @@ var Container0 = document.querySelector(".container");
 var StartQuiz = document.getElementById("start-quiz");
 var correct = document.querySelector(".correct");
 var choices = document.querySelector(".choices");
-// var choices = document.querySelector(".choices").children;
 var choiceA =document.getElementById("A");
 var choiceB =document.getElementById("B");
 var choiceC =document.getElementById("C");
 var choiceD = document.getElementById("D");
 var Submit =document.querySelector(".submit-button");
-var question =document.querySelector("question");
+var question =document.querySelector(".question");
 
 
 
@@ -87,13 +86,11 @@ function start() {
     // container.getElementsByClassName.display = "block";
     // choices.document.querySelector.style.display = "block";
 console.log("StartQuiz");
-    // getQuestion();
+    getQuestion();
     NavTimer();
 }
 
- 
-
-function NavTimer() {
+ function NavTimer() {
     setInterval(function(){
         secondsStart--
         console.log(secondsStart);
@@ -108,14 +105,16 @@ function NavTimer() {
 
 
 function getQuestion() {
+    console.log('checking answer')
     var choices = Questionselection [questionIndex];
+    question.textContent = Questionselection [0].question;
+  A.textContent = Questionselection[0].choiceA;
+  B.textContent = Questionselection[1].choiceB;
+  C.textContent = Questionselection[2].choiceC;
+  D.textContent = Questionselection[3].choiceD; 
+  correct.textContent = Questionselection [0].correct; 
 
-  A.textContent = Questionselection[0].choices[0];
-  B.textContent = Questionselection[1].choices[1];
-  C.textContent = Questionselection[2].choices[2];
-  D.textContent = Questionselection[3].choices[3];  
-
-  for (var i = 0; i < lastQuestion; i++) {
+  for (var i = 0; i < endQuestion; i++) {
 
   }
 }
