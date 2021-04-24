@@ -1,6 +1,6 @@
 var NavHighscores = document.querySelector(".View-Highscores");
 var NavTime = document.getElementById("Time");
-var Container0 = document.querySelector(".container");
+var Container = document.querySelector(".container");
 var StartQuiz = document.getElementById("start-quiz");
 var correct = document.querySelector(".correct");
 var choices = document.querySelector(".choices");
@@ -10,6 +10,7 @@ var choiceC =document.getElementById("C");
 var choiceD = document.getElementById("D");
 var Submit =document.querySelector(".submit-button");
 var question =document.querySelector(".question");
+// var outofTime = document.querySelector(".outofTime");
 
 
 
@@ -69,7 +70,7 @@ var Questionselection = [
 
 ]
 
-
+var isWin = false;
 var questionStop = 0;
 var questionIndex = 0;
 var endQuestion = Questionselection.length -1;
@@ -85,20 +86,27 @@ StartQuiz.addEventListener("click", start);
 function start() {
     // container.getElementsByClassName.display = "block";
     // choices.document.querySelector.style.display = "block";
-console.log("StartQuiz");
+    console.log("StartQuiz");
+    isWin = false;
+    // Container.getElementById.display = 'none';
     getQuestion();
     NavTimer();
 }
+
+
 
  function NavTimer() {
     setInterval(function(){
         secondsStart--
         console.log(secondsStart);
         NavTime.textContent = secondsStart;
-        if (secondsStart <= 0) {
+        if (secondsStart >= 0) {
             clearInterval(Interval);
             Finished (questionStop);
             StartQuiz = "Your out of Time";
+        }
+        if (secondsStart === 0) {
+            clearInterval(Interval);
         }
     }, 1000);
 }
