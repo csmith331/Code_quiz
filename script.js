@@ -2,7 +2,7 @@ var NavHighscores = document.querySelector(".View-Highscores");
 var NavTime = document.getElementById("Time");
 var Container = document.querySelector(".container");
 var StartQuiz = document.getElementById("start-quiz");
-var correct = document.querySelector(".correct");
+var correct = document.getElementById("correct");
 var choices = document.querySelector(".choices");
 var choiceA =document.getElementById("A");
 var choiceB =document.getElementById("B");
@@ -70,17 +70,20 @@ var Questionselection = [
 
 ]
 
+
 var isWin = false;
 var questionStop = 0;
 var questionIndex = 0;
 var endQuestion = Questionselection.length -1;
 var counter = 0
 var secondsStart = 75;
-var Interval = 0;
+var timer = 0;
 var timeDeduction = 15;
 
 //need to create a eventlistener to start quiz
-
+// function init() {
+//     gameOver();
+// }
 StartQuiz.addEventListener("click", start);  
 
 function start() {
@@ -91,25 +94,31 @@ function start() {
     // Container.getElementById.display = 'none';
     getQuestion();
     NavTimer();
+    // loseGame();
+    // gameOver();
 }
 
-
+// function loseGame() {
+//     outofTime.textContent = "GAME OVER";
+//     questionStop++
+//     startButton.disabled = false;
+//     gameOver();
+//   }
 
  function NavTimer() {
-    setInterval(function(){
+   var timerInterval = setInterval(function() {
         secondsStart--
         console.log(secondsStart);
         NavTime.textContent = secondsStart;
-        if (secondsStart >= 0) {
-            clearInterval(Interval);
-            Finished (questionStop);
-            StartQuiz = "Your out of Time";
-        }
         if (secondsStart === 0) {
-            clearInterval(Interval);
+            clearInterval(timerInterval);
+            // Finished (questionStop);
+            // loseGame = "Your out of Time";
         }
+       
     }, 1000);
 }
+
 
 
 function getQuestion() {
@@ -122,6 +131,7 @@ function getQuestion() {
   D.textContent = Questionselection[3].choiceD; 
   correct.textContent = Questionselection [0].correct; 
 
+  
   for (var i = 0; i < endQuestion; i++) {
 
   }
@@ -136,7 +146,7 @@ for (let i = 0; i < choices.length; i++) {
             MessageChannel.textContent = 'correct!';
             count = count + 10
             localStorage.setItem("count", count);
-            //window.localStorage.setItem ('score + 5')?
+            
         } else {
             MessageChannel.textContent = 'incorrect';
             timerCount = timerCount - 10;
@@ -144,7 +154,7 @@ for (let i = 0; i < choices.length; i++) {
                 count= count - 3
                 localStorage.setItem("count", count);
             }
-            //window.localStorage.setItem('score - 2')
+            
         }
         questionIndex++;
         getQuestion(); 

@@ -1,8 +1,8 @@
-/* body {
+body {
     background-image:url("Images/pexels-coding.jpg");
     margin: 0;
     padding:0;
-    } */
+    }
 
     .View-Highscores {
         padding-top: 15px;
@@ -19,7 +19,7 @@
         float: right;
         font-family:Georgia, 'Times New Roman', Times, serif;
         font-size: 40px;
-        color:black;
+        color:white;
     }
     
     .container {
@@ -35,7 +35,7 @@
         top: 30vh; 
     }  
 
-    .start-quiz {
+    #start-quiz {
         background-color: purple;
         color:white;
         float: center;
@@ -55,9 +55,10 @@
         padding: 15px;
         border-radius: 8px;
         margin: 10px;
-        color:purple;
+        color:white;
         cursor: pointer;
         font-size: 25px;
+        background-color: purple;
         /* //need to figure out how to get boxes between questions */
     }
 
@@ -110,7 +111,7 @@
         top: 150px;
     }
 
-    .correct {
+    #correct {
         margin-top: -300px;
         margin-left: -100px;
         color: white;
@@ -122,7 +123,7 @@
         position:fixed;
         font-family:Georgia, 'Times New Roman', Times, serif;
         font-size: 40px;
-        color:black;
+        color:white;
     }
     
     /* #wrong {
@@ -148,7 +149,8 @@
         padding: 15px;
         border-radius: 8px;
         margin: 10px;
-        color:purple;
+        color: white;
+        background-color: purple;
         cursor: pointer;
         font-size: 25px; 
         font-family:Georgia, 'Times New Roman', Times, serif;
@@ -162,7 +164,8 @@
         padding: 15px;
         border-radius: 8px;
         margin: 10px;
-        color:purple;
+        color: white;
+        background-color: purple;
         cursor: pointer;
         font-size: 25px;
         font-family:Georgia, 'Times New Roman', Times, serif;  
@@ -176,7 +179,8 @@
         padding: 15px;
         border-radius: 8px;
         margin: 10px;
-        color:purple;
+        color:white;
+        background-color:purple;
         cursor: pointer;
         font-size: 25px; 
         font-family:Georgia, 'Times New Roman', Times, serif;
@@ -190,7 +194,8 @@
         padding: 15px;
         border-radius: 8px;
         margin: 10px;
-        color:purple;
+        color:white;
+        background-color: purple;
         cursor: pointer;
         font-size: 25px;
         font-family:Georgia, 'Times New Roman', Times, serif;  
@@ -204,7 +209,7 @@
         padding: 15px;
         border-radius: 8px;
         margin: 10px;
-        color:purple;
+        color:white;
         cursor: pointer;
         font-size: 25px;
         font-family:Georgia, 'Times New Roman', Times, serif;
