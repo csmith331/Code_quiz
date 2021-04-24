@@ -1,7 +1,7 @@
 var NavHighscores = document.querySelector(".View-Highscores");
-var NavTime = document.querySelector(".Time");
+var NavTime = document.getElementById("Time");
 var Container0 = document.querySelector(".container");
-var StartQuiz = document.querySelector(".start-quiz");
+var StartQuiz = document.getElementById("start-quiz");
 var correct = document.querySelector(".correct");
 var choices = document.querySelector(".choices");
 // var choices = document.querySelector(".choices").children;
@@ -84,22 +84,20 @@ var timeDeduction = 15;
 StartQuiz.addEventListener("click", start);  
 
 function start() {
-    container.getElementsByClassName.display = "block";
-    choices.getElementsByClassName.style.display = "block";
-
-    SecondsStart = 75;
-    getQuestion();
+    // container.getElementsByClassName.display = "block";
+    // choices.document.querySelector.style.display = "block";
+console.log("StartQuiz");
+    // getQuestion();
     NavTimer();
 }
 
  
 
 function NavTimer() {
-if (Interval == 0) {
-    interval = setInterval(function () {
-        secondsStart--;
-        StartQuiz = "Time: " + secondsStart;
-
+    setInterval(function(){
+        secondsStart--
+        console.log(secondsStart);
+        NavTime.textContent = secondsStart;
         if (secondsStart <= 0) {
             clearInterval(Interval);
             Finished ();
@@ -107,9 +105,6 @@ if (Interval == 0) {
         }
     }, 1000);
 }
-}
-// return(question);
-// };
 
 
 function getQuestion() {
