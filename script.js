@@ -77,8 +77,8 @@ var timeDeduction = 15;
 
 StartQuiz.addEventListener("click", start);  
 
-Function start() {
-    Container.getElementsByClassName.visbility = "hidden";
+function StartQuiz() {
+    Container.getElementsByClassName.visbility = "visible";
 
     SecondsStart = 75;
 questionDisplay();
