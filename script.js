@@ -2,12 +2,12 @@ var NavHighscores = document.querySelector(".View-Highscores");
 var NavTime = document.querySelector(".Time");
 var Container0 = document.querySelector(".container");
 var StartQuiz = document.querySelector(".start-quiz");
-var Answers = document.querySelector(".answers");
-var Choices = document.querySelector("choices");
-var A =document.getElementById("A");
-var B =document.getElementById("B");
-var C =document.getElementById("C");
-var D = document.getElementById("D");
+var correct = document.querySelector(".correct");
+var choices = document.querySelector(".choices");
+var choiceA =document.getElementById("A");
+var choiceB =document.getElementById("B");
+var choiceC =document.getElementById("C");
+var choiceD = document.getElementById("D");
 var Submit =document.querySelector(".submit-button");
 var question =document.querySelector("question");
 
@@ -18,49 +18,54 @@ var codingQuestions = [
 
     {
 
-        questions:"Commonly used Data Types do not include:",
+        question:"Commonly used Data Types do not include:",
+        choiceA: "Strings",
+        choiceB: "Booleans",
+        choiceC: "Alerts",
+        choiceD: "Numbers",
+        correct: "C",
 
-        choices:["String", "Booleans", "Alerts", "Numbers"],
+    },
 
-        answers: "Booleans",
+    {
 
-    }
+        question:"The condition in an if/else statement is enclosed within__________.",
+        choiceA: "Quotes",
+        choiceB: "Curly brackets",
+        choiceC: "Parenthesis",
+        choiceD: "Square brackets",
+        correct: "B",
 
-    ,{
+    },
 
-        questions:"The condition in an if/else statement is enclosed within__________.",
+    {
 
-        choices: ["Quotes", "Curly brackets", "Parenthesis", "Square brackets"],
-        
-        answers: "Curly brackets",
+        question:"Arrays in Javascript can be used to store __________.",
+        choiceA: "Numbers and strings",
+        choiceB: "Other arrays",
+        choiceC: "Booleans",
+        choiceD: "All of the above",
+        correct: "D",
 
-    }
+    },
 
-    ,{
+    {
+        question: "String values must be enclosed within _______ when being assigned to variables.",
+        choiceA: "Commas",
+        choiceB: "Curly brackets",
+        choiceC: "Quotes",
+        choiceD: "Parenthesis",
+        correct: "C",
+    },
 
-        questions:"Arrays in Javascript can be used to store __________.",
-
-        choices: ["Numbers and strings", "Other arrays", "Booleans", "All the above"],
-
-        answers: "Booleans",
-
-    }
-
-    ,{
-        questions: "String values must be enclosed within _______ when being assigned to variables.",
-
-        choices: ["Commas", "Curly brackets", "Quotes", "Parenthesis"],
-
-        answers: "Curly brackets",
-    }
-
-    ,{
-        questions: "A very useful tool used during development and debugging for printing content to the debugger is:",
-
-        choices: ["Javascript", "Terminal/bash", "For loops", "Console.log"],
-
-        answers: "For loops",
-    }
+    {
+        question: "A very useful tool used during development and debugging for printing content to the debugger is:",
+        choiceA: "Javascript",
+        choiceB: "Terminal/bash",
+        choiceC: "For loops",
+        choiceD: "Console.log",
+        correct: "D",
+    },
 
 ]
 
@@ -77,12 +82,13 @@ var timeDeduction = 15;
 
 StartQuiz.addEventListener("click", start);  
 
-function StartQuiz() {
-    Container.getElementsByClassName.visbility = "visible";
+function start() {
+    container.getElementsByClassName.display = "block";
+    choices.getElementsByClassName.display = "block";
 
     SecondsStart = 75;
-questionDisplay();
-NavTimer();
+    getQuestion();
+    NavTimer();
 }
 
  
@@ -104,8 +110,8 @@ if (Interval == 0) {
 // };
 
 
-function questionDisplay() {
-    var presentQuestion = codingQuestions [questionIndex];
+function getQuestion() {
+    var choices = codingQuestions [questionIndex];
 
   A.textcontent = codingQuestions[0].choices[0];
   B.textcontent = codingQuestions[1].choices[1];
@@ -122,7 +128,7 @@ for (let i = 0; i < choicesDiv.length; i++) {
         var Answer = codingQuestions[questionIndex].correct;
 
         console.log('click');
-        if (Answer) === this.getAttribute('onclick')) {
+        if (Answer === this.getAttribute('onclick')) {
             MessageChannel.textContent = 'correct!';
             count = count + 10
             localStorage.setItem("count", count);
@@ -136,10 +142,10 @@ for (let i = 0; i < choicesDiv.length; i++) {
             }
             //window.localStorage.setItem('score - 2')
             }
-        }
+        })
         }
         questionIndex++;
-        questionDisplay();
+        getQuestion();
     }
     
 

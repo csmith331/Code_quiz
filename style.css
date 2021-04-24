@@ -74,7 +74,7 @@ body {
         text-align: center;
         }
     
-    .submit-button {
+    /* .submit-button {
         background-color: purple;
         color:white;
         float: center;
@@ -84,7 +84,7 @@ body {
         position: relative;
         left: 14vw;
         top: 150px;
-    }
+    } */
 
     .Go-back-button {
         background-color: purple;

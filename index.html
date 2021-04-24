@@ -41,7 +41,7 @@
         <div class= "question">
             
         </div>
-        <div id='container'style="visibility: visibile;" >
+        <div id='container'style= "display: block;" >
     <h1>Coding Quiz Challenge</h1>
     <p>Try to answer the following questions within the time</p>
     <p>Limit. Keep in mind the incorrect answers will penalize your score-time</p>
@@ -49,11 +49,11 @@
 </div>
     
 
-    <div class='choices'>
-        <button type="button" class="choice" id="A" onclick="Answer('0')"></button>
-        <button type="button" class="choice" id="B" onclick="Answer('1')"></button>
-        <button type="button" class="choice" id="C" onclick="Answer('2')"></button>
-        <button type="button" class="choice" id="D" onclick="Answer('3')"></button>
+    <div class= "choices" style= "display: block;">
+        <button type="button" class="choice" id="A" onclick="correct('0')"></button>
+        <button type="button" class="choice" id="B" onclick="correct('1')"></button>
+        <button type="button" class="choice" id="C" onclick="correct('2')"></button>
+        <button type="button" class="choice" id="D" onclick="correct('3')"></button>
     </div>
 
     <div class='answer'>
@@ -64,9 +64,9 @@
 
     </div>
 
-    <button class ="submit-button">Submit</button>
+    <!-- <button class ="submit-button">Submit</button> -->
 
-    <script text='javasript' src='./script.js'></script>
+    <script text='javascript' src='./script.js'></script>
 
 </main>
 </body>
