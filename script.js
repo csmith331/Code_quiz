@@ -70,7 +70,7 @@ var Questionselection = [
 ]
 
 
-
+var questionStop = 0;
 var questionIndex = 0;
 var endQuestion = Questionselection.length -1;
 var counter = 0
@@ -97,7 +97,7 @@ console.log("StartQuiz");
         NavTime.textContent = secondsStart;
         if (secondsStart <= 0) {
             clearInterval(Interval);
-            Finished ();
+            Finished (questionStop);
             StartQuiz = "Your out of Time";
         }
     }, 1000);
@@ -105,7 +105,7 @@ console.log("StartQuiz");
 
 
 function getQuestion() {
-    console.log('checking answer')
+    // console.log('checking answer')
     var choices = Questionselection [questionIndex];
     question.textContent = Questionselection [0].question;
   A.textContent = Questionselection[0].choiceA;
@@ -121,10 +121,10 @@ function getQuestion() {
 
 for (let i = 0; i < choices.length; i++) {
     choices[i].addEventListener('click', function () {
-        var Answer = Questionselection [questionIndex].correct;
+        var correct = Questionselection [questionIndex].correct;
 
         console.log('click');
-        if (Answer === this.getAttribute('onclick')) {
+        if (correct === this.getAttribute('onclick')) {
             MessageChannel.textContent = 'correct!';
             count = count + 10
             localStorage.setItem("count", count);
